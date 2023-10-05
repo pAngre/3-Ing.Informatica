@@ -1,0 +1,6 @@
+#!/bin/bash
+# inf_one_process
+PID=$1
+
+echo -e "PID\tPPID\tESTADO\tCOMANDO\n"
+./inf_process $PID

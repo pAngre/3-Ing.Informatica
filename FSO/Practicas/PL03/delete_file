@@ -1,0 +1,14 @@
+#!/bin/bash
+# delete_file
+file=$1
+if test -d $file
+then
+    echo "Es un directorio, no se puede borrar"
+fi
+if test -f $file
+then
+    rm $file
+    echo "Archivo $file borrado"
+else
+    echo "No existe"
+fi
